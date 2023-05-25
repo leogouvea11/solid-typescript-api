@@ -5,13 +5,14 @@ import nodemailer from 'nodemailer'
 
 export class MailtrapMailProvider implements IMailProvider {
   private transporter: Mail
+
   constructor() {
     this.transporter = nodemailer.createTransport({
-      host: 'smtp.mailtrap.io',
+      host: 'sandbox.smtp.mailtrap.io',
       port: 2525,
       auth: {
-        user: '2a8d4332cdf2e4',
-        pass: '78f69bddf4d2a6',
+        user: 'c1ec036c055dd2',
+        pass: 'a1d2e722bac80a',
       },
     })
   }
